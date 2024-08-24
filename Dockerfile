@@ -8,6 +8,7 @@
 # Ejecutamos el comando mvn clean package (Generara un archivo JAR para el despliegue)
 FROM eclipse-temurin:22-jdk AS build
 COPY . .
+ENV ELASTICSEARCH_HOST=unir-cluster-6455179952.us-east-1.bonsaisearch.net ELASTICSEARCH_USER=evn3c7h37o ELASTICSEARCH_PWD=9ofx819x28
 RUN apt-get update && \
 	apt-get install -y maven && \
 	apt-get clean;
