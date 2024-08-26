@@ -37,7 +37,7 @@ eureka:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
       
   instance:
-    preferIpAddress: true
+    preferIpAddress: false
     hostname: ${HOSTNAME:localhost}
     non-secure-port-enabled: false
     secure-port-enabled: true
